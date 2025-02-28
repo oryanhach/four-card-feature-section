@@ -84,6 +84,82 @@ h3 {
 
 /* General Styling */
 
-* body {
+body {
 	font-family: var(--ff-base);
+	font-size: 0.75rem;
+	background-color: var(--clr-neutral-100);
+	padding: 3rem 1.75rem;
+	color: var(--clr-neutral-500);
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+	margin-bottom: 3rem;
+}
+
+.product__header {
+	font-weight: var(--fw-light);
+}
+
+.product__header-highlight {
+	font-weight: var(--fw-semibold);
+	display: block;
+	margin-top: 0.35rem;
+}
+
+.product__header-text {
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+.product__cards {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	align-items: center;
+}
+
+.product__card {
+	height: 14rem;
+	border-radius: 0.5rem;
+	box-shadow: 0px 6px 15px -3px rgba(194, 188, 194, 0.7);
+	padding: 2rem 2rem 2rem 2rem;
+}
+
+.product__card--supervisor {
+	border-top: 4px var(--clr-cyan) solid;
+}
+
+.product__card--team-builder {
+	border-top: 4px var(--clr-red) solid;
+}
+
+.product__card--karma {
+	border-top: 4px var(--clr-orange) solid;
+}
+
+.product__card--calculator {
+	border-top: 4px var(--clr-blue) solid;
+}
+
+.product__card-title {
+	margin-bottom: 0.5rem;
+	font-weight: var(--fw-semibold);
+}
+
+.product__card-text {
+	font-size: 0.85rem;
+	line-height: 1.25rem;
+	margin-bottom: 1.5rem;
+}
+
+.product__card-icon {
+	display: flex;
+	flex-direction: column;
+}
+
+img {
+	align-self: end;
 }
